@@ -1,3 +1,3 @@
 C++ Primer 
-5.1节练习：
-Ex5.1:什么是空语句？什么时候会用到空语句？
+操作系统：Win10 or Linux(Ubuntu 20.04 LTS)
+编译器：Visual studio2020 or g++
