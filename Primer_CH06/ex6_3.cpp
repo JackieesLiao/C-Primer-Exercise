@@ -10,5 +10,5 @@ int fact(int val)
 }
 int main()
 {
-	std::cout <<"½×³Ë½á¹û£º"<< fact(3) << std::endl;
+	std::cout <<"é˜¶ä¹˜ç»“æœï¼š"<< fact(5) << std::endl;
 }
