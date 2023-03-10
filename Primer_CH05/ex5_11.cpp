@@ -3,31 +3,33 @@
 using namespace std;
 int main()
 {  
-	//Í³¼ÆÊıÁ¿
+	//ç»Ÿè®¡æ•°é‡
 	int vowelCount = 0;
 	int spaceCount = 0;
 	int tabCount = 0;
 	int newlineCount = 0;
-	int otherCount = 0;//ÆäËû×ÖÄ¸
+	int otherCount = 0;//å…¶ä»–å­—æ¯
 	char str;
-	cout << "ÇëÊäÈëÒ»¶Î°üº¬¸÷ÖÖ×Ö·ûµÄÎÄ±¾£º"<<endl;
-	/*cin.get(c)º¯Êı
-	»áÔÚ¶ÁÈ¡µ½ÓĞĞ§×Ö·ûÊ±·µ»Ø·ÇÁãÖµ£¬
-	¶øÔÚÓöµ½ÊäÈëÁ÷½áÊø·û£¨ÀıÈçÎÄ¼şÄ©Î²»òÊäÈëÁ÷¹Ø±Õ£©Ê±·µ»ØÁã¡£
+	cout << "è¯·è¾“å…¥ä¸€æ®µåŒ…å«å„ç§å­—ç¬¦çš„æ–‡æœ¬ï¼š"<<endl;
+	/*cin.get(c)å‡½æ•°
+	ä¼šåœ¨è¯»å–åˆ°æœ‰æ•ˆå­—ç¬¦æ—¶è¿”å›éé›¶å€¼ï¼Œ
+	è€Œåœ¨é‡åˆ°è¾“å…¥æµç»“æŸç¬¦ï¼ˆä¾‹å¦‚æ–‡ä»¶æœ«å°¾æˆ–è¾“å…¥æµå…³é—­ï¼‰æ—¶è¿”å›é›¶ã€‚
 	*/
 	while (cin.get(str))
 	{
-		if (isspace(str))//strÎª¿Õ°×Ê±ÎªÕæ
+		if (isspace(str))//strä¸ºç©ºç™½æ—¶ä¸ºçœŸ
 		{
-			if (str == ' ')//¿Õ¸ñ
+			if (str == ' ')//ç©ºæ ¼
+			{
 				spaceCount++;
-		else if (str == '\t')
-		    tabCount++;
-		else if (str == '\n')
-			newlineCount++;
+			}else if (str == '\t'){
+				tabCount++;
+			} else if (str == '\n'){
+				newlineCount++;
+			}	  
 		}
 		else {
-			if (tolower(str))//ÈôÎª´óĞ´×ÖÄ¸×ªÎªĞ¡Ğ´£¬·ñÔò²»±ä
+			if (tolower(str))//è‹¥ä¸ºå¤§å†™å­—æ¯è½¬ä¸ºå°å†™ï¼Œå¦åˆ™ä¸å˜
 			{
 				switch (str)
 				{
@@ -46,9 +48,9 @@ int main()
 		}
 		
 	}
-	cout << "ÔªÒô×ÖÄ¸ÓĞ£º" << vowelCount << endl;
-	cout << "·ÇÔªÒô×ÖÄ¸ÓĞ£º" << otherCount << endl;
-	cout << "¿Õ¸ñÓĞ£º" << spaceCount << endl;
-	cout << "ÖÆ±í·ûÓĞ£º" << tabCount << endl;
-	cout << "»»ĞĞ·ûÓĞ£º" << newlineCount << endl;
+	cout << "å…ƒéŸ³å­—æ¯æœ‰ï¼š" << vowelCount << endl;
+	cout << "éå…ƒéŸ³å­—æ¯æœ‰ï¼š" << otherCount << endl;
+	cout << "ç©ºæ ¼æœ‰ï¼š" << spaceCount << endl;
+	cout << "åˆ¶è¡¨ç¬¦æœ‰ï¼š" << tabCount << endl;
+	cout << "æ¢è¡Œç¬¦æœ‰ï¼š" << newlineCount << endl;
 }
