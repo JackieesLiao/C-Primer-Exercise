@@ -1,11 +1,10 @@
 #include<iostream>
-#include<vector>
 int main()
 {
 	char ch;
 	unsigned int aCnt=0, iCnt=0, oCnt=0, eCnt=0, uCnt=0;
 	unsigned int other_count = 0;
-	std::cout << "ÊäÈëÒ»¶ÎÎÄ±¾Í³¼ÆÔªÒô×ÖÄ¸£º[´óÐ¡Ð´¾ù¿É]";
+	std::cout << "è¾“å…¥ä¸€æ®µæ–‡æœ¬ç»Ÿè®¡å…ƒéŸ³å­—æ¯ï¼š[å¤§å°å†™å‡å¯]";
 	while (std::cin >> ch)
 	{
 		switch (ch)
@@ -29,10 +28,10 @@ int main()
 			other_count++;
 		}
 	}
-	std::cout << "a|AÔªÒô×ÖÄ¸¹²ÓÐ£º" << aCnt << std::endl;
-	std::cout << "i|IÔªÒô×ÖÄ¸¹²ÓÐ£º" << iCnt << std::endl;
-	std::cout << "e|EÔªÒô×ÖÄ¸¹²ÓÐ£º" << eCnt << std::endl;
-	std::cout << "o|OÔªÒô×ÖÄ¸¹²ÓÐ£º" << oCnt << std::endl;
-	std::cout << "u|UÔªÒô×ÖÄ¸¹²ÓÐ£º" << uCnt << std::endl;
-	std::cout << "·ÇÔªÒô×ÖÄ¸¹²ÓÐ£º" << other_count << std::endl;
+	std::cout << "a|Aå…ƒéŸ³å­—æ¯å…±æœ‰ï¼š" << aCnt << std::endl;
+	std::cout << "i|Iå…ƒéŸ³å­—æ¯å…±æœ‰ï¼š" << iCnt << std::endl;
+	std::cout << "e|Eå…ƒéŸ³å­—æ¯å…±æœ‰ï¼š" << eCnt << std::endl;
+	std::cout << "o|Oå…ƒéŸ³å­—æ¯å…±æœ‰ï¼š" << oCnt << std::endl;
+	std::cout << "u|Uå…ƒéŸ³å­—æ¯å…±æœ‰ï¼š" << uCnt << std::endl;
+	std::cout << "éžå…ƒéŸ³å­—æ¯å…±æœ‰ï¼š" << other_count << std::endl;
 }
