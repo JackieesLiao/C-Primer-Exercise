@@ -4,21 +4,19 @@ int main()
 {
 	char ch;
 	int o_count=0;
-	cout << "ÊäÈëÒ»¶ÎÎÄ±¾£º";
+	cout << "è¾“å…¥ä¸€æ®µæ–‡æœ¬ï¼š[æŒ‰ctrl+Z+enterä»¥ç»“æŸ]";
 	while(cin >> ch)
 	{
-      if (ch == 'a')
-        ++o_count;
+          if (ch == 'a')
+            ++o_count;
 	  if (ch == 'e')
 	    ++o_count;
-      if (ch == 'u')
-		++o_count;
+          if (ch == 'u')
+	    ++o_count;
 	  if (ch == 'i')
-		++o_count;
+	    ++o_count;
 	  if (ch == 'o')
-		++o_count;
-	 
+	    ++o_count;
 	}
-	cout << "¹²ÓÐ" << o_count << "¸öÔªÒô×ÖÄ¸¡£" << endl;
-	
+	cout << "å…±æœ‰" << o_count << "ä¸ªå…ƒéŸ³å­—æ¯ã€‚" << endl;
 }
