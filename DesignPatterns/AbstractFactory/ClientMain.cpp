@@ -3,7 +3,7 @@
 #include"ConcreteProduct.h"
 int main()
 {
-	//实现创建具体产品对象
+	//瀹炵幇鍒涘缓鍏蜂綋浜у搧瀵硅薄
 	IAbstractFactory* iabs1 = new PurpleRectangleFactory();
 	IShape* rec = iabs1->createShape();
 	IColor* pr = iabs1->createColor();
